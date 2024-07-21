@@ -19,6 +19,7 @@ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.local/bin/repo
 chmod a+x ~/.local/bin/repo
 git config --global user.email "root@localhost"
 git config --global user.name "Who am i?"
+git config --global color.ui true
 cd ~/android
 repo init -u https://github.com/Gofaraway71/android_manifest -b 13 --git-lfs
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
